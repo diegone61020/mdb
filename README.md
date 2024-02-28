@@ -25,6 +25,16 @@ maximum 2.
 our results can be stored in 4 bits because they are decimal digits and we are left with unused combinations that could be used for parity or other special functions
 we would have compressed 57,885,161 bits into 4*48 bits therefore 192 bits
 I can't develop the program and I'm looking for help
+my idea is based on the value expressed by the files in binary a series of 1 and 0 in binary can be interpreted as 
+a number expressed in powers of two the first bit will be 1 if set to 1 the second 2 the third 4 and so on.
+-My idea is based on the value expressed by the files in binary a series of 1s and 0s in binary can be interpreted as a
+number expressed in powers of two the first bit will be 1 if set to 1 the second 2 the third 4 and so on.
+taking a number of bits equal to 57,885,162 and dividing it by the Mersenne index 57,885,161 I obtain a remainder and a result.
+Continuing to divide by the previous Mersenne indices I always obtain remainders and results up to the lowest index equal
+to 3 in decimal and a remainder less than 3. When reconstructing the original file I will simply do so
+the inverse operation i.e. result index n for index n+ index n-1 for index n-1 until reaching
+lowest index. at the end I will add the rest and I will have my original file.
+Since the Mersenne numbers are only made up of a series of 1s in binary, this simulifies the calculations by reducing them to shit on the right and shift on the left
 
 Diego Di Battista
 
@@ -53,6 +63,14 @@ massimo 2.
 considerando che un operando è sempre fatto da una serie 1 in binario le operazioni possono essere ottimizzate
 i nostri risulatati possono essere memorizzati in 4 bit perchè sono cifre decimali e ci rimangono combinazioni non usare che potrebbero essere usate per parità o altre funzioni speciali 
 noi avremmo compresso 57.885.161 bit in 4*48 bit quindi 192 bit
-non riesco a sviluppare il programma e cerco aiuto
+non riesco a sviluppare il programma e cerco aiuto.
+-La mia idea si basa sul valore spresso dai file in binario una serie di 1 e 0 in binario possono essere interpretati come un 
+numero espresso in potenze di due il primo bit varra 1 se posto a 1 il secondo 2 il terzo 4 e cosi via.
+prendendo un numero di bit pari a 57.885.162  e dividendolo per l'indice di Mersenne 57.885.161 otterro un resto ed un risultato.
+Continuando a dividre per gli indici di Mersenne precedenti otterro sempre resti e risuòltati fino al indice più basso pari 
+a 3 in decimale ed un resto minore di 3. Nella ricostruzione del file originale faro semplicemente 
+l'operzione inversa cioe risultato indice n per indice n+  indice n-1 per indice n-1 fino ad arrivare al 
+indice più basso .alla fine sommerò il resto ed avro il mio file originale. 
+Essendo i numeri di  Mersenne formati solo da una serie di 1 in binario questo semolifica i calcoli riducendoli a shit a destra  e shift a sinistra
 Diego Di Battista
 
